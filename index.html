@@ -1,0 +1,314 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Utkarsh Keshari — Backend Engineer · Founder · System Builder</title>
+<meta name="description" content="Utkarsh Keshari — Java Backend Developer building production systems with Spring Boot, MySQL & Redis. Founder, 21Day. Creator of KRSON." />
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Sora:wght@500;600;700&family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<!-- ============ NAV ============ -->
+<nav class="nav">
+  <div class="nav-inner">
+    <div class="nav-logo"><span class="dot"></span> utkarsh<span style="color:var(--muted)">@</span>portfolio<span style="color:var(--muted)">:~$</span></div>
+
+    <div class="nav-tabs">
+      <a href="#about" data-tab>about.json</a>
+      <a href="#stack" data-tab>stack.config</a>
+      <a href="#experience" data-tab>experience.log</a>
+      <a href="#projects" data-tab>projects/</a>
+      <a href="#architecture" data-tab>architecture.yml</a>
+      <a href="#contact" data-tab>contact.sh</a>
+    </div>
+
+    <div class="nav-cta">
+      <a href="assets/resume.pdf" class="btn btn-ghost" download>resume --download</a>
+      <button class="nav-burger" id="burger" aria-label="Toggle menu"><span></span><span></span><span></span></button>
+    </div>
+  </div>
+</nav>
+
+<div class="mobile-menu" id="mobileMenu">
+  <a href="#about">about.json</a>
+  <a href="#stack">stack.config</a>
+  <a href="#experience">experience.log</a>
+  <a href="#projects">projects/</a>
+  <a href="#architecture">architecture.yml</a>
+  <a href="#contact">contact.sh</a>
+  <a href="assets/resume.pdf" download style="color:var(--primary)">↓ download resume</a>
+</div>
+
+<!-- ============ HERO ============ -->
+<header class="hero" id="top">
+  <canvas id="bg-canvas"></canvas>
+  <div class="wrap hero-grid">
+    <div class="hero-copy">
+      <div class="terminal">
+        <div class="terminal-bar"><span class="tdot"></span><span class="tdot"></span><span class="tdot"></span> &nbsp;boot.sh</div>
+        <div class="terminal-line"><span class="prompt">$</span> whoami</div>
+      </div>
+      <h1>Utkarsh Keshari</h1>
+      <div class="hero-role">Backend Engineer<span class="sep">·</span>Founder<span class="sep">·</span>System Builder</div>
+      <div class="hero-typing"><span id="typingText"></span><span class="cursor"></span></div>
+
+      <div class="hero-actions">
+        <a href="#projects" class="btn btn-primary">View Projects</a>
+        <a href="assets/resume.pdf" class="btn btn-ghost" download>open resume.pdf</a>
+      </div>
+    </div>
+
+    <div class="photo-stage">
+      <div class="tilt-card" id="tiltCard">
+        <div class="glow-ring"></div>
+        <div class="frame">
+          <img src="assets/profile-hero.jpg" alt="Utkarsh Keshari, backend engineer, working on a laptop" />
+        </div>
+        <div class="float-tag t1">Spring Boot</div>
+        <div class="float-tag t2">Java</div>
+        <div class="float-tag t3">MySQL</div>
+        <div class="badge-chip">
+          <span class="live"><span class="pulse-dot"></span> open to roles</span>
+          <span>Gorakhpur, IN</span>
+        </div>
+      </div>
+    </div>
+  </div>
+</header>
+
+<!-- ============ STATS ============ -->
+<section class="stats" aria-label="Highlights">
+  <div class="wrap stats-grid">
+    <div class="stat">
+      <div class="stat-num" data-count="10000" data-suffix="+">0</div>
+      <div class="stat-label">Active users served</div>
+    </div>
+    <div class="stat">
+      <div class="stat-num" data-count="15" data-suffix="+">0</div>
+      <div class="stat-label">Production REST APIs shipped</div>
+    </div>
+    <div class="stat">
+      <div class="stat-num" data-count="60" data-suffix="%">0</div>
+      <div class="stat-label">MySQL query time reduced</div>
+    </div>
+    <div class="stat">
+      <div class="stat-num" data-count="96" data-suffix="K+">0</div>
+      <div class="stat-label">Community reach (IG + FB)</div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ ABOUT ============ -->
+<section id="about">
+  <div class="wrap">
+    <span class="eyebrow">about.json</span>
+    <h2 class="section-heading reveal">A backend engineer who also builds audiences.</h2>
+
+    <div class="about-grid">
+      <div class="about-text reveal">
+        <p>I'm a <strong>Java backend developer</strong> based in Gorakhpur, India, focused on shipping production systems with <strong>Spring Boot, MySQL and Redis</strong>. At skilledUp, I helped architect a learning management system that now serves <strong>10,000+ active users</strong>, while keeping response times under 200ms and cutting database query time by 60%.</p>
+        <p>Before that, I spent two years founding and growing a content platform from scratch — taking it to <strong>10,000+ monthly visitors</strong> and a combined audience of nearly 100K followers across Instagram and Facebook. So I think about products from both the engineering side and the audience side.</p>
+        <p>Right now I'm exploring microservice patterns with Kafka, gRPC, Docker and Kubernetes, and building <strong>KRSON</strong> — an experimental data-serialization format — on the side.</p>
+
+        <div class="about-tags">
+          <span class="tag primary">Immediate Joiner</span>
+          <span class="tag">Walmart USA — SE Job Simulation</span>
+          <span class="tag">Hindi · English</span>
+        </div>
+      </div>
+
+      <div class="flip-card reveal" id="flipCard" tabindex="0" role="button" aria-label="Flip to see quick facts">
+        <div class="flip-inner">
+          <div class="flip-face flip-front">
+            <img src="assets/profile-side.jpg" alt="Utkarsh Keshari portrait" />
+          </div>
+          <div class="flip-face flip-back">
+            <div class="fb-row"><span class="fb-label">LOCATION</span><span class="fb-val">Gorakhpur, Uttar Pradesh, India</span></div>
+            <div class="fb-row"><span class="fb-label">EDUCATION</span><span class="fb-val">Masai School — Software Engineering</span></div>
+            <div class="fb-row"><span class="fb-label">ALSO STUDIED</span><span class="fb-val">B.Sc Chemistry (DU) · B.A. (Siddharth University)</span></div>
+            <div class="fb-row"><span class="fb-label">CERTIFICATION</span><span class="fb-val">Walmart USA — Advanced Software Engineering Job Simulation</span></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ TECH STACK ============ -->
+<section id="stack">
+  <div class="wrap">
+    <span class="eyebrow">stack.config</span>
+    <h2 class="section-heading reveal">Core stack</h2>
+    <p class="section-sub reveal">What I reach for in production. The ring keeps turning — hover a chip to pause and inspect it.</p>
+
+    <div class="stack-wrap">
+      <div class="ring-stage" id="ringStage">
+        <div class="ring" id="ring"><!-- chips injected by JS --></div>
+      </div>
+      <div class="ring-fallback" id="ringFallback"><!-- chips injected by JS --></div>
+
+      <div class="exploring-row reveal">
+        <span class="exploring-label">currently exploring →</span>
+        <div class="exploring-chips">
+          <span class="tag dashed">Kafka</span>
+          <span class="tag dashed">gRPC</span>
+          <span class="tag dashed">Docker</span>
+          <span class="tag dashed">Kubernetes</span>
+          <span class="tag dashed">AWS</span>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ EXPERIENCE ============ -->
+<section id="experience">
+  <div class="wrap">
+    <span class="eyebrow">experience.log</span>
+    <h2 class="section-heading reveal">How I got here</h2>
+    <p class="section-sub reveal">Four roles, one thread: ship it, measure it, make it faster.</p>
+
+    <div class="timeline">
+      <div class="timeline-track"></div>
+      <div class="timeline-progress" id="timelineProgress"></div>
+
+      <div class="timeline-item">
+        <div class="timeline-dot"></div>
+        <span class="timeline-date">DEC 2025 — PRESENT</span>
+        <div class="timeline-role">Software Engineer</div>
+        <div class="timeline-org">skilledUp · Noida</div>
+        <div class="timeline-desc">Own backend for a production LMS serving 10,000+ users at 99% uptime. Cut MySQL query time 60% (2.5s → 1s), shipped 15+ REST APIs incl. payments, RBAC auth and certificate generation.</div>
+      </div>
+
+      <div class="timeline-item">
+        <div class="timeline-dot"></div>
+        <span class="timeline-date">JUN 2025 — DEC 2025</span>
+        <div class="timeline-role">Software Engineer Intern</div>
+        <div class="timeline-org">skilledUp · Noida</div>
+        <div class="timeline-desc">Built OTP / email / password auth flows and course enrollment workflows. Improved peak-traffic performance by 40% through indexing and query refactors.</div>
+      </div>
+
+      <div class="timeline-item">
+        <div class="timeline-dot"></div>
+        <span class="timeline-date">JUN 2023 — JUN 2025</span>
+        <div class="timeline-role">Founder &amp; Developer</div>
+        <div class="timeline-org">21Day Neem Karoli Baba · Gorakhpur</div>
+        <div class="timeline-desc">Built a WordPress platform from zero to 10,000+ monthly visitors and ~96K combined followers. Ran an SEO strategy that grew organic traffic 300%.</div>
+      </div>
+
+      <div class="timeline-item">
+        <div class="timeline-dot"></div>
+        <span class="timeline-date">MAR 2023 — JUN 2023</span>
+        <div class="timeline-role">Software Engineer Intern</div>
+        <div class="timeline-org">Salesken</div>
+        <div class="timeline-desc">Built and maintained internal web app features with Java, Spring Boot and WebSocket. Fixed defects, wrote unit tests, took part in agile sprints and code review.</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ PROJECTS ============ -->
+<section id="projects">
+  <div class="wrap">
+    <span class="eyebrow">projects/</span>
+    <h2 class="section-heading reveal">Featured work</h2>
+    <p class="section-sub reveal">A production LMS, a founder story, and a side project for the curious.</p>
+
+    <div class="projects-grid">
+
+      <div class="project-card glass reveal">
+        <div class="project-top">
+          <div class="project-name">SkilledUp LMS</div>
+          <span class="status-badge">Live · Production</span>
+        </div>
+        <p class="project-desc">Production-grade learning platform handling enrollment, payments, certificates and role-based auth for 10,000+ users — 99% uptime, sub-200ms response times.</p>
+        <div class="project-tags"><span class="tag">Spring Boot</span><span class="tag">MySQL</span><span class="tag">Redis</span><span class="tag">JWT</span></div>
+        <a href="https://github.com/utkarshbanka/skilledupmain" target="_blank" rel="noopener" class="project-link">view on github →</a>
+      </div>
+
+      <div class="project-card glass reveal">
+        <div class="project-top">
+          <div class="project-name">SkilledUp Subscription</div>
+          <span class="status-badge">Live</span>
+        </div>
+        <p class="project-desc">Subscription layer on top of the LMS, handling recurring billing and tiered access to premium course content.</p>
+        <div class="project-tags"><span class="tag">Spring Boot</span><span class="tag">MySQL</span><span class="tag">Payments</span></div>
+        <a href="https://github.com/utkarshbanka/skilledupSubscription" target="_blank" rel="noopener" class="project-link">view on github →</a>
+      </div>
+
+      <div class="project-card glass reveal">
+        <div class="project-top">
+          <div class="project-name">KRSON</div>
+          <span class="status-badge dashed">Researching</span>
+        </div>
+        <p class="project-desc">An experimental data-serialization format exploring a more compact, readable alternative to JSON — currently working through parser design and cross-platform compatibility.</p>
+        <div class="project-tags"><span class="tag">Java</span><span class="tag">Parsing</span><span class="tag">Spec Design</span></div>
+        <a href="https://github.com/utkarshbanka/KRSON" target="_blank" rel="noopener" class="project-link">view on github →</a>
+      </div>
+
+      <div class="project-card glass reveal">
+        <div class="project-top">
+          <div class="project-name">21Day Neem Karoli Baba</div>
+          <span class="status-badge">Live · Founder</span>
+        </div>
+        <p class="project-desc">A content platform built from scratch on WordPress, now reaching 64K+ Instagram and 32K+ Facebook followers with 10,000+ monthly site visitors.</p>
+        <div class="project-tags"><span class="tag">WordPress</span><span class="tag">SEO</span><span class="tag">Growth</span></div>
+        <a href="https://21dayneemkarolibaba.com" target="_blank" rel="noopener" class="project-link">visit site →</a>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- ============ ARCHITECTURE LAB ============ -->
+<section id="architecture">
+  <div class="wrap">
+    <span class="eyebrow">architecture.yml</span>
+    <h2 class="section-heading reveal">How a request moves through skilledUp</h2>
+    <p class="section-sub reveal">Simplified, but real — this is the path I optimized to get sub-200ms responses.</p>
+
+    <div class="arch-diagram glass" id="archDiagram">
+      <div class="arch-node glass" data-node><div class="ic">🌐</div>Browser</div>
+      <div class="arch-connector" data-conn><span class="flow-dot"></span></div>
+      <div class="arch-node glass" data-node><div class="ic">🚪</div>API Gateway</div>
+      <div class="arch-connector" data-conn><span class="flow-dot"></span></div>
+      <div class="arch-node glass" data-node><div class="ic">☕</div>Spring Boot</div>
+      <div class="arch-connector" data-conn><span class="flow-dot"></span></div>
+      <div class="arch-node glass" data-node><div class="ic">⚡</div>Redis Cache</div>
+      <div class="arch-connector" data-conn><span class="flow-dot"></span></div>
+      <div class="arch-node glass" data-node><div class="ic">🗄️</div>MySQL</div>
+    </div>
+    <p class="arch-note">Caching hot reads in Redis before they hit MySQL is most of how query time dropped <span class="hl">60%</span>.</p>
+  </div>
+</section>
+
+<!-- ============ CONTACT ============ -->
+<section id="contact">
+  <div class="wrap">
+    <div class="contact-card glass reveal">
+      <span class="eyebrow" style="justify-content:center;width:100%">contact.sh</span>
+      <h2>Let's build something.</h2>
+      <p>Open to full-time backend roles — currently an immediate joiner.</p>
+      <div class="contact-links">
+        <a href="mailto:utkarshmeradost@gmail.com" class="btn btn-primary">Email Me</a>
+        <a href="https://www.linkedin.com/in/theutkarshkeshari/" target="_blank" rel="noopener" class="btn btn-ghost">open linkedin</a>
+        <a href="https://github.com/utkarshbanka" target="_blank" rel="noopener" class="btn btn-ghost">open github</a>
+        <a href="assets/resume.pdf" download class="btn btn-ghost">download resume</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<footer>
+  designed &amp; built by Utkarsh Keshari · deployed on Vercel · <span id="year"></span>
+</footer>
+
+<script src="js/script.js"></script>
+</body>
+</html>
